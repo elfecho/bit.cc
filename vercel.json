@@ -2,9 +2,21 @@
   "version": 2,
   "builds": [
     {
+      "src": "api/**/*.js",
+      "use": "@vercel/node"
+    },
+    {
       "src": "nuxt.config.js",
-      "use": "@nuxtjs/now-builder",
-      "config": {}
+      "use": "@nuxtjs/vercel-builder",
+      "config": {
+        "serverFiles": ["api/**", "server-middleware/**"]
+      }
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "/api/index.js"
     }
   ]
 }
