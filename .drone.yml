@@ -12,7 +12,7 @@ pipeline:
   build:
     image: node:16
     commands:
-      - yarn install
+      - npm install
       - npm run build
 
   # write node_modules back to cache
