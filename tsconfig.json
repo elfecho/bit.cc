@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "target": "esnext",
+    "target": "es5",
     "module": "esnext",
     "moduleResolution": "node",
     "lib": [
@@ -25,10 +25,6 @@
       ],
       "@/*": [
         "./src/*"
-      ],
-      "types": [
-        "@types/node",
-        "@nuxt/types"
       ]
     },
     "types": [
@@ -41,6 +37,9 @@
     "src/**/*",
     "test/**/*.ts",
     "types/**/*.ts",
+  ],
+  "exclude": [
+    "node_modules"
   ]
 }
 
