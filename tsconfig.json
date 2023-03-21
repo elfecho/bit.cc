@@ -6,9 +6,11 @@
     "lib": [
       "esnext",
       "esnext.asynciterable",
-      "dom"
+      "dom",
+      "dom.iterable",
     ],
     "esModuleInterop": true,
+    "experimentalDecorators": true,
     "allowJs": true,
     "sourceMap": true,
     "strict": true,
@@ -28,7 +30,12 @@
         "@types/node",
         "@nuxt/types"
       ]
-    }
+    },
+    "types": [
+      "@types/node",
+      "@nuxt/types",
+      "@types/jest"
+    ]
   },
   "include": [
     "src/**/*",
@@ -36,3 +43,41 @@
     "types/**/*.ts",
   ]
 }
+
+
+// {
+//   "compilerOptions": {
+//     "target": "es5",
+//     "module": "esnext",
+//     "moduleResolution": "node",
+//     "lib": [
+//       "dom",
+//       "dom.iterable",
+//       "esnext"
+//     ],
+//     "esModuleInterop": true,
+//     "experimentalDecorators": true,
+//     "allowJs": true,
+//     "sourceMap": true,
+//     "strict": true,
+//     "noImplicitAny": false,
+//     "noEmit": true,
+//     "baseUrl": ".",
+//     "paths": {
+//       "~/*": [
+//         "./*"
+//       ],
+//       "@/*": [
+//         "./*"
+//       ]
+//     },
+//     "types": [
+//       "@types/node",
+//       "@nuxt/types",
+//       "@types/jest"
+//     ]
+//   },
+//   "exclude": [
+//     "node_modules"
+//   ]
+// }
