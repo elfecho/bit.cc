@@ -6,7 +6,7 @@ export default {
   srcDir: 'src',
   server: {
     host: '0.0.0.0',
-    port: abcConfig.port || 80,
+    port: 80,
   },
   /*
   ** Headers of the page

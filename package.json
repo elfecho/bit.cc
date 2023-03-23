@@ -22,6 +22,8 @@
     "reload_test1": "pm2 reload ecosystem.config.js --only bit.cc_test1"
   },
   "dependencies": {
+  },
+  "devDependencies": {
     "@lay2/pw-core": "^0.4.0-alpha.9",
     "@mail3/mail3-me": "0.1.5",
     "@nuxtjs/composition-api": "^0.32.0",
@@ -45,9 +47,7 @@
     "nuxt-i18n": "^6.28.0",
     "url-parse": "^1.5.10",
     "vue-i18n": "^8.27.0",
-    "web3-utils": "^1.7.1"
-  },
-  "devDependencies": {
+    "web3-utils": "^1.7.1",
     "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
     "@nuxtjs/composition-api": "^0.32.0",
